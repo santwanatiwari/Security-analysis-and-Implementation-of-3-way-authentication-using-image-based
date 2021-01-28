@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    body
+    {
+      margin:50px 0px; padding:0px;
+      text-align:center;
+      }
+     
+    .Image
+    {
+          width:101px;
+          margin:0px auto;
+          text-align:center;
+          padding:20px;
+          border:1px dashed gray;
+          background-color:Silver;
+            height: 111px;
+        }
+ 
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="position:absolute; top: 31px; left: 112px;">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+            codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" 
+            style="width: 1241px; height: 115px">
+<param name="movie" value="flashvortex.swf" />
+<param name="quality" value="best" />
+<param name="menu" value="true" />
+<param name="allowScriptAccess" value="sameDomain" />
+<embed src="flashvortex.swf" quality="best" menu="true" width="728" height="90" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="sameDomain" />
+</object>
+    </div>
+    <div style="position:absolute; top: 151px; left: 14px; height: 457px; width: 954px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="position:absolute; top: 616px; left: 13px; height: 74px; width: 963px;">    
+    
+        <asp:Image ID="Image1" runat="server"             
+            style="position: absolute; height: 76px; width: 956px; top: 0px; left: 0px;" 
+            ImageUrl="~/Uploads/background11.png" />
+    </div>
+    </form>
+</body>
+</html>
