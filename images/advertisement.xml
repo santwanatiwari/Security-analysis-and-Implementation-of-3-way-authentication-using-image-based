@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad id="ad">
+    <ImageUrl>~/Ads/x1.png</ImageUrl>
+    <NavigateUrl>Default2.aspx</NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>20</Impressions>
+    <Keyword>Asp.Net</Keyword>
+  </Ad>
+  <Ad id="ad1">
+    <ImageUrl>~/Ads/x2.png</ImageUrl>
+    <NavigateUrl></NavigateUrl>
+    <AlternateText></AlternateText>
+    <Impressions>30</Impressions>
+    <Keyword>Asp.Net</Keyword>
+  </Ad>
+  
+ </Advertisements>
